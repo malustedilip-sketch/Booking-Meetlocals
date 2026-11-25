@@ -169,6 +169,11 @@
   .result pre{white-space:pre-wrap;font-family:inherit;font-size:1rem;margin:10px 0 14px;line-height:1.6;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px}
   .copy-btn{background:var(--accent);color:var(--accent-ink);border:0;border-radius:12px;padding:13px 18px;font-weight:800;cursor:pointer;width:100%;font-size:1rem}
   @media(min-width:560px){.copy-btn{width:auto}}
+  .email-btn{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;margin-top:12px;background:var(--green);color:#fff;text-decoration:none;border-radius:12px;padding:14px 18px;font-weight:800;font-size:1rem;text-align:center}
+  @media (prefers-color-scheme: dark){.email-btn{color:#10241a}}
+  .email-btn:hover{opacity:.92}
+  .send-to{margin-top:14px;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px 13px;font-size:.92rem;line-height:1.5}
+  .send-to a{font-weight:800;word-break:break-all}
   .copied{font-size:.92rem;color:var(--green);font-weight:700;margin-top:9px;min-height:1.2em}
   .result .note{text-align:left;margin-left:0}
 
@@ -225,7 +230,7 @@
       <div class="steps" aria-label="How booking works">
         <div class="step"><b>1</b> Tap Book</div>
         <div class="step"><b>2</b> Fill in the form</div>
-        <div class="step"><b>3</b> Copy &amp; send your request</div>
+        <div class="step"><b>3</b> Email your request</div>
       </div>
     </div>
   </header>
@@ -257,7 +262,7 @@
             <li><span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21h16M5 21v-8a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v8M9 7a3 3 0 1 1 6 0c0 1-1 1.5-1.5 2h-3C10 8.5 9 8 9 7Z"/></svg></span><div><b>Age</b><small>Confirmed 18 or older</small></div></li>
           </ul>
           <button class="book-btn book-btn-person" type="button" data-name="Angel Risky">Book Angel Risky <span aria-hidden="true">→</span></button>
-          <p class="note">Free to request. You will copy your request at the end to send it.</p>
+          <p class="note">Free to request. At the end you can email your request to <a href="mailto:sarhbarbab@hotmail.com">sarhbarbab@hotmail.com</a>.</p>
         </div>
       </article>
 
@@ -278,7 +283,7 @@
             <li><span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11.5 12 4l9 7.5M5 10v10h14V10"/></svg></span><div><b>Services</b><small>Incall and Outcall services</small></div></li>
           </ul>
           <button class="book-btn book-btn-person" type="button" data-name="Sweet Lauren Xoxo">Book Sweet Lauren Xoxo <span aria-hidden="true">→</span></button>
-          <p class="note">Free to request. You will copy your request at the end to send it.</p>
+          <p class="note">Free to request. At the end you can email your request to <a href="mailto:sarhbarbab@hotmail.com">sarhbarbab@hotmail.com</a>.</p>
         </div>
       </article>
     </div>
@@ -287,7 +292,7 @@
       <div class="panel-top">
         <span class="kicker">Booking request</span>
         <h2 id="bookingTitle">Book Angel Risky</h2>
-        <p>Fill in your details below. When you tap “Make my request”, you will get a ready-to-send copy of your booking.</p>
+        <p>Fill in your details below. When you tap “Make my request”, you will get a ready-to-send booking you can email to sarhbarbab@hotmail.com.</p>
       </div>
       <div class="panel-grid">
         <aside class="summary" aria-label="Booking summary">
@@ -296,8 +301,9 @@
           <ol>
             <li><b>1</b><span>Fill in your name, contact, date, time, and place.</span></li>
             <li><b>2</b><span>Tap “Make my request” to create your booking text.</span></li>
-            <li><b>3</b><span>Copy it and paste it into a message or email to send it.</span></li>
+            <li><b>3</b><span>Tap “Email my request” — it opens your email app addressed and ready to send. You can also copy it instead.</span></li>
           </ol>
+          <div class="send-to"><strong>Send bookings to:</strong><br /><a href="mailto:sarhbarbab@hotmail.com">sarhbarbab@hotmail.com</a></div>
           <div class="free"><strong>Free to request.</strong><br />There is no charge to make a request on this page.</div>
         </aside>
 
@@ -333,9 +339,10 @@
           <div class="result" id="resultBox" aria-live="polite">
             <h3><span class="check" aria-hidden="true">✓</span> Your booking request is ready</h3>
             <pre id="resultText"></pre>
-            <button class="copy-btn" id="copyBtn" type="button">Copy my request</button>
+            <a class="email-btn" id="emailBtn" href="mailto:sarhbarbab@hotmail.com">Email my request to sarhbarbab@hotmail.com</a>
+            <button class="copy-btn" id="copyBtn" type="button" style="margin-top:12px">Copy my request instead</button>
             <div class="copied" id="copiedMsg"></div>
-            <p class="note">Now paste it into a message or email and send it. This page does not send it for you.</p>
+            <p class="note">Tap “Email my request” and your email app will open with everything filled in — just press Send there. Or copy the text and paste it into any message.</p>
           </div>
         </div>
       </div>
@@ -350,13 +357,13 @@
     <div class="how-grid">
       <div class="how-card"><div class="num">01</div><h3>Tap Book</h3><p>Tap <strong>Book</strong> on the card of the person you want to book. The form will be set for her.</p></div>
       <div class="how-card"><div class="num">02</div><h3>Fill in the form</h3><p>Add your name, how to reach you, the date and time you want, and where to meet.</p></div>
-      <div class="how-card"><div class="num">03</div><h3>Copy &amp; send</h3><p>Copy your ready-made request and paste it into a message or email to complete the booking.</p></div>
+      <div class="how-card"><div class="num">03</div><h3>Email &amp; send</h3><p>Tap “Email my request” to send your ready-made booking to <a href="mailto:sarhbarbab@hotmail.com">sarhbarbab@hotmail.com</a> — or copy it and paste it into any message.</p></div>
     </div>
 
     <section class="know" aria-labelledby="knowTitle">
       <h2 id="knowTitle">Good to know</h2>
       <div class="know-grid">
-        <div class="know-item"><strong>Private &amp; simple</strong><p>Your request is made on this page for you to copy. Nothing is sent until you paste and send it yourself.</p></div>
+        <div class="know-item"><strong>Private &amp; simple</strong><p>Your request is made on this page. Nothing is sent until you tap to email it to <a href="mailto:sarhbarbab@hotmail.com">sarhbarbab@hotmail.com</a> and press Send in your email app.</p></div>
         <div class="know-item"><strong>Adults only</strong><p>Everyone listed here is 18 or older and said yes to being listed on this page.</p></div>
         <div class="know-item"><strong>Please be respectful</strong><p>Use your real contact details so she can reply, and be polite and clear about date, time, and place.</p></div>
       </div>
@@ -370,7 +377,11 @@
     <div class="faq">
       <details>
         <summary>How do I finish my booking?</summary>
-        <p>Fill in the form and tap “Make my request”. You will see your booking written out for you — tap “Copy my request”, then paste it into a message or email and send it. That send is what completes the booking.</p>
+        <p>Fill in the form and tap “Make my request”. You will see your booking written out for you — tap “Email my request” and your email app will open addressed to sarhbarbab@hotmail.com with everything filled in. Just press Send there. That send is what completes the booking. You can also copy the text and paste it into any message instead.</p>
+      </details>
+      <details>
+        <summary>Where do bookings go?</summary>
+        <p>Bookings are emailed to <a href="mailto:sarhbarbab@hotmail.com">sarhbarbab@hotmail.com</a>. Tap “Email my request” after filling in the form and your email app will open with that address and your booking already filled in.</p>
       </details>
       <details>
         <summary>Does it cost anything to request?</summary>
@@ -390,6 +401,7 @@
   <footer>
     <div class="foot-rule" aria-hidden="true">◆ ◆ ◆</div>
     <p><strong>Meet Locals — Ft Rucker &amp; Dothan, AL</strong><br />
+    <strong>Send bookings to:</strong> <a href="mailto:sarhbarbab@hotmail.com">sarhbarbab@hotmail.com</a><br />
     <strong>Adults only.</strong> Everyone listed on this page is 18 or older and said yes to being listed.<br />
     Please be respectful when you book.</p>
   </footer>
@@ -405,6 +417,8 @@
   var resultBox = document.getElementById('resultBox');
   var resultText = document.getElementById('resultText');
   var copyBtn = document.getElementById('copyBtn');
+  var emailBtn = document.getElementById('emailBtn');
+  var bookingEmail = 'sarhbarbab@hotmail.com';
   var copiedMsg = document.getElementById('copiedMsg');
   var errorEl = document.getElementById('formError');
   var dateInput = document.getElementById('f-date');
@@ -475,6 +489,10 @@
     if(note) lines.push('Note: ' + note);
 
     resultText.textContent = lines.join('\n');
+    if(emailBtn){
+      var subject = 'Booking request for ' + selectedPerson;
+      emailBtn.href = 'mailto:' + bookingEmail + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(lines.join('\n'));
+    }
     resultBox.classList.add('show');
     copiedMsg.textContent = '';
     resultBox.scrollIntoView({behavior:'smooth', block:'nearest'});
