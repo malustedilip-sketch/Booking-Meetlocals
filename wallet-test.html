@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meet Locals — Wallet Test</title>
+    <script type="module" crossorigin src="./assets/index-DVQYT7EW.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/rolldown-runtime-Cw2AbfQG.js">
+    <link rel="modulepreload" crossorigin href="./assets/-base-org-account-BYg571CL.js">
+    <link rel="modulepreload" crossorigin href="./assets/-noble-curves-BoBVVdf4.js">
+    <link rel="modulepreload" crossorigin href="./assets/-noble-hashes-CMOmdbqC.js">
+    <link rel="modulepreload" crossorigin href="./assets/-msgpack-msgpack-BP-Jgxeu.js">
+    <link rel="modulepreload" crossorigin href="./assets/-lit-reactive-element-3JtC3ogf.js">
+    <link rel="modulepreload" crossorigin href="./assets/-reown-appkit-W1Dklm6h.js">
+    <link rel="modulepreload" crossorigin href="./assets/-reown-appkit-adapter-wagmi-C50YpWF3.js">
+    <link rel="stylesheet" crossorigin href="./assets/index-yjQ-Dfdr.css">
+  </head>
+  <body>
+    <main>
+      <h1>Meet Locals — Wallet Test</h1>
+      <p class="note">This is a test page only. It is not the live booking site.</p>
+
+      <section aria-label="Connect wallet">
+        <h2>Connect wallet</h2>
+        <appkit-button></appkit-button>
+        <p id="account-status" role="status">Wallet not connected yet.</p>
+      </section>
+
+      <section aria-label="Pay with crypto">
+        <h2>Pay with crypto</h2>
+        <p class="warning">
+          Only pay after your booking price has been agreed. There is no fixed
+          price on this page — you type in the agreed amount yourself. Check the
+          amount, coin, network, and recipient address carefully before you confirm
+          in your wallet. Crypto payments cannot be undone.
+        </p>
+
+        <label>
+          Amount
+          <input id="amount" type="number" min="0" step="any" inputmode="decimal" placeholder="e.g. 50" />
+        </label>
+
+        <label>
+          Coin
+          <select id="coin">
+            <option value="USDC">USDC</option>
+            <option value="ETH">ETH</option>
+          </select>
+        </label>
+
+        <label>
+          Network
+          <select id="network">
+            <option value="1">Ethereum</option>
+            <option value="8453">Base</option>
+          </select>
+        </label>
+
+        <p>
+          Recipient address:<br />
+          <code id="recipient">0x2a039cf6334b733ace81355fc6edffdc1ee4b9c1</code>
+        </p>
+
+        <button id="pay" type="button">Pay</button>
+        <p id="pay-status" role="status"></p>
+      </section>
+    </main>
+  </body>
+</html>
