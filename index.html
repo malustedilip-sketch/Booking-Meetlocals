@@ -168,57 +168,18 @@
   .icon svg{width:19px;height:19px}
   .meta b{display:block;line-height:1.25;font-size:.98rem}
   .meta small{display:block;color:var(--muted);font-size:.88rem;line-height:1.35;margin-top:1px}
-  .book-btn{width:100%;margin-top:20px;background:var(--accent);color:var(--accent-ink);border:0;border-radius:14px;padding:16px 18px;font-size:1.08rem;font-weight:800;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:9px;transition:background .15s ease, transform .15s ease}
-  .book-btn:hover{background:var(--accent-deep)}
-  .book-btn:active{transform:scale(.99)}
+  .contact-btn{width:100%;margin-top:20px;background:var(--accent);color:var(--accent-ink);border:0;border-radius:14px;padding:16px 18px;font-size:1.08rem;font-weight:800;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:9px;transition:background .15s ease, transform .15s ease}
+  .contact-btn:hover{background:var(--accent-deep)}
+  .contact-btn:active{transform:scale(.99)}
   .note{font-size:.9rem;color:var(--muted);text-align:center;margin:11px 4px 0;line-height:1.5}
 
-  /* ---------- BOOKING ---------- */
+  /* ---------- CONTACT ---------- */
   .panel{margin-top:28px;background:var(--surface);border:1px solid var(--line);border-radius:24px;box-shadow:var(--shadow);overflow:hidden}
   .panel-top{background:var(--accent);color:#fff;padding:22px 22px 20px}
   @media (prefers-color-scheme: dark){.panel-top{background:var(--accent-soft);color:var(--ink)}}
   .panel-top .kicker{font-size:.8rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;opacity:.85}
   .panel-top h2{font-family:"Playfair Display",Georgia,serif;font-size:clamp(1.6rem,4vw,2rem);margin:6px 0 6px;line-height:1.12}
   .panel-top p{margin:0;opacity:.92;max-width:560px;line-height:1.55}
-  .panel-grid{display:grid;grid-template-columns:1fr}
-  @media(min-width:880px){.panel-grid{grid-template-columns:300px 1fr}}
-  .summary{padding:22px;background:var(--surface-2);border-bottom:1px solid var(--line)}
-  @media(min-width:880px){.summary{border-bottom:0;border-right:1px solid var(--line)}}
-  .summary h3{margin:0 0 4px;font-size:.86rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
-  .summary .who{font-family:"Playfair Display",Georgia,serif;font-size:1.55rem;line-height:1.15;margin:0 0 16px}
-  .summary ol{list-style:none;margin:0;padding:0;display:grid;gap:14px;counter-reset:step}
-  .summary li{display:flex;gap:11px;font-size:.96rem;line-height:1.5;color:var(--ink-2)}
-  .summary li b{width:26px;height:26px;flex:0 0 auto;border-radius:50%;background:var(--surface);border:1.5px solid var(--line-strong);color:var(--accent);display:grid;place-items:center;font-size:.84rem}
-  .summary .free{margin-top:18px;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px 13px;font-size:.92rem;line-height:1.5}
-  .form-side{padding:22px}
-  @media(min-width:880px){.form-side{padding:26px 28px}}
-  label{display:block;font-weight:700;font-size:.95rem;margin:18px 0 7px}
-  label:first-of-type{margin-top:0}
-  .optional{font-weight:400;color:var(--muted)}
-  input,select,textarea{width:100%;border:1.5px solid var(--line-strong);background:var(--bg);color:var(--ink);border-radius:12px;padding:13px 14px;font-size:1rem;font-family:inherit;transition:border-color .15s ease, box-shadow .15s ease}
-  input::placeholder,textarea::placeholder{color:var(--muted);opacity:.85}
-  textarea{min-height:88px;resize:vertical}
-  input:focus,textarea:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-soft)}
-  .row{display:grid;gap:0}
-  @media(min-width:560px){.row{grid-template-columns:1fr 1fr;gap:14px}}
-  .submit{width:100%;margin-top:22px;background:var(--ink);color:var(--bg);border:0;border-radius:14px;padding:16px;font-size:1.06rem;font-weight:800;cursor:pointer}
-  .submit:hover{opacity:.92}
-  .form-error{color:var(--accent);font-weight:700;text-align:center;font-size:.95rem;margin:10px 0 0;min-height:1.2em}
-  .result{margin-top:20px;background:var(--green-soft);border:1px solid var(--line);border-radius:16px;padding:18px;display:none}
-  .result.show{display:block}
-  .result h3{margin:0 0 6px;font-size:1.08rem;display:flex;align-items:center;gap:8px}
-  .result h3 .check{width:26px;height:26px;border-radius:50%;background:var(--green);color:#fff;display:inline-grid;place-items:center;font-size:.9rem;flex:0 0 auto}
-  @media (prefers-color-scheme: dark){.result h3 .check{color:#10241a}}
-  .result pre{white-space:pre-wrap;font-family:inherit;font-size:1rem;margin:10px 0 14px;line-height:1.6;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px}
-  .copy-btn{background:var(--accent);color:var(--accent-ink);border:0;border-radius:12px;padding:13px 18px;font-weight:800;cursor:pointer;width:100%;font-size:1rem}
-  @media(min-width:560px){.copy-btn{width:auto}}
-  .email-btn{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;margin-top:12px;background:var(--green);color:#fff;text-decoration:none;border-radius:12px;padding:14px 18px;font-weight:800;font-size:1rem;text-align:center}
-  @media (prefers-color-scheme: dark){.email-btn{color:#10241a}}
-  .email-btn:hover{opacity:.92}
-  .send-to{margin-top:14px;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px 13px;font-size:.92rem;line-height:1.5}
-  .send-to a{font-weight:800;word-break:break-all}
-  .copied{font-size:.92rem;color:var(--green);font-weight:700;margin-top:9px;min-height:1.2em}
-  .result .note{text-align:left;margin-left:0}
 
   /* ---------- HOW + GOOD TO KNOW ---------- */
   .how-grid{display:grid;grid-template-columns:1fr;gap:14px;margin-top:20px}
@@ -254,43 +215,16 @@
   h1 em{color:var(--gold)}
   .btn-primary{background:linear-gradient(135deg,#c24557,#8e2a3a);border-color:#c24557}
   .card{border-color:var(--line-strong)}
-  .book-btn{background:linear-gradient(135deg,#c24557,#8e2a3a)}
-  .book-btn:hover{background:linear-gradient(135deg,#a93a4b,#7c2231)}
+  .contact-btn{background:linear-gradient(135deg,#c24557,#8e2a3a)}
+  .contact-btn:hover{background:linear-gradient(135deg,#a93a4b,#7c2231)}
   .panel-top{background:linear-gradient(135deg,#3a1e27,#24141b);color:var(--ink);border-bottom:1px solid var(--line-strong)}
   .panel-top .kicker{color:var(--gold)}
-  .submit{background:var(--gold);color:#1d1508}
-  .submit:hover{background:#d9b671;opacity:1}
-  .wallet-bar{margin:26px auto 0;max-width:640px;background:var(--surface);border:1px solid var(--gold);border-radius:18px;padding:18px;box-shadow:var(--shadow-sm)}
-  .wallet-bar h2{font-family:"Playfair Display",Georgia,serif;font-size:1.3rem;margin:0 0 4px}
-  .wallet-bar p{margin:0 0 12px;color:var(--muted);font-size:.97rem}
-  .wallet-bar appkit-button{display:flex;justify-content:center}
-  #account-status{font-size:.9rem;color:var(--muted);margin:10px 0 0;word-break:break-all;text-align:center}
-  .crypto-btn{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;margin-top:12px;background:transparent;color:var(--gold);border:1.5px solid var(--gold);border-radius:14px;padding:14px 16px;font-size:1rem;font-weight:800;text-decoration:none;min-height:48px}
-  .crypto-btn:hover{background:var(--gold-soft)}
-  .pay-panel{margin-top:28px}
-  .pay-body{padding:22px}
-  @media(min-width:880px){.pay-body{padding:26px 28px}}
-  .pay-warning{background:#2e2417;border:1px solid var(--gold);border-radius:12px;padding:14px 16px;font-size:.98rem;line-height:1.6;color:var(--ink-2)}
-  .pay-warning strong{color:var(--gold)}
-  .pay-grid{display:grid;gap:0}
-  @media(min-width:560px){.pay-grid{grid-template-columns:1fr 1fr;gap:14px}}
-  .recipient-box{background:var(--surface-2);border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin-top:18px;font-size:.95rem}
-  .recipient-box code{word-break:break-all;color:var(--gold);font-size:.92rem}
-  #pay{width:100%;margin-top:20px;background:linear-gradient(135deg,#c24557,#8e2a3a);color:#fff;border:0;border-radius:14px;padding:16px;font-size:1.06rem;font-weight:800;cursor:pointer;min-height:48px}
-  #pay:hover{opacity:.92}
-  #pay-status{font-size:.95rem;color:var(--ink-2);margin:12px 0 0;min-height:1.2em;word-break:break-word}
-  .pay-connect-row{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:18px}
-  .pay-connect-row appkit-button{display:inline-flex}
+  .contact-body{padding:22px}
+  @media(min-width:880px){.contact-body{padding:26px 28px}}
+  .contact-body p{margin:0 0 14px;color:var(--muted);line-height:1.65;max-width:640px}
+  .contact-body p:last-child{margin-bottom:0}
+  a.contact-btn{text-decoration:none}
 </style>
-<script type="module" crossorigin src="./assets/index-DVQYT7EW.js"></script>
-    <link rel="modulepreload" crossorigin href="./assets/rolldown-runtime-Cw2AbfQG.js">
-    <link rel="modulepreload" crossorigin href="./assets/-base-org-account-BYg571CL.js">
-    <link rel="modulepreload" crossorigin href="./assets/-noble-curves-BoBVVdf4.js">
-    <link rel="modulepreload" crossorigin href="./assets/-noble-hashes-CMOmdbqC.js">
-    <link rel="modulepreload" crossorigin href="./assets/-msgpack-msgpack-BP-Jgxeu.js">
-    <link rel="modulepreload" crossorigin href="./assets/-lit-reactive-element-3JtC3ogf.js">
-    <link rel="modulepreload" crossorigin href="./assets/-reown-appkit-W1Dklm6h.js">
-    <link rel="modulepreload" crossorigin href="./assets/-reown-appkit-adapter-wagmi-C50YpWF3.js">
   </head>
 <body>
 <div id="ageGate" role="dialog" aria-modal="true" aria-labelledby="ageGateTitle" aria-describedby="ageGateText">
@@ -337,32 +271,26 @@
   <header class="hero">
     <div class="hero-inner">
       <div class="eyebrow-row">
-        <span class="badge"><span class="dot" aria-hidden="true"></span> Now booking</span>
+        <span class="badge"><span class="dot" aria-hidden="true"></span> Local ads</span>
         <span class="badge plain">Adults only · 18+</span>
       </div>
       <h1>Meet Locals in <em>Ft Rucker &amp; Dothan</em></h1>
       <div class="rule" aria-hidden="true"><span>◆</span></div>
-      <p class="lead">Real local profiles near <strong>Fort Rucker</strong> and <strong>Dothan, Alabama</strong>. Pick a person, choose a date and time, tell us where to meet — and send your request in about a minute.</p>
+      <p class="lead">Real local profiles near <strong>Fort Rucker</strong> and <strong>Dothan, Alabama</strong>. Browse the ads below and contact the advertiser directly — this site does not take bookings or payments.</p>
       <div class="hero-ctas">
         <a class="btn-primary" href="#profiles">Browse profiles ↓</a>
         <a class="btn-secondary" href="#how">How it works</a>
       </div>
-      <div class="wallet-bar" aria-label="Connect wallet">
-        <h2>Pay with crypto</h2>
-        <p>Connect your wallet here, or scroll to the payment section after you book. USDC or ETH, on Ethereum or Base.</p>
-        <appkit-button></appkit-button>
-        <p id="account-status" role="status">Wallet not connected yet.</p>
-      </div>
       <div class="hero-facts" aria-label="At a glance">
         <div><b>2</b><span>Profiles live now</span></div>
         <div><b>2 towns</b><span>Ft Rucker &amp; Dothan</span></div>
-        <div><b>Free</b><span>To send a request</span></div>
+        <div><b>Free</b><span>To browse ads</span></div>
         <div><b>18+</b><span>Everyone verified adult</span></div>
       </div>
-      <div class="steps" aria-label="How booking works">
-        <div class="step"><b>1</b> Tap Book</div>
-        <div class="step"><b>2</b> Fill in the form</div>
-        <div class="step"><b>3</b> Email your request</div>
+      <div class="steps" aria-label="How it works">
+        <div class="step"><b>1</b> Browse ads</div>
+        <div class="step"><b>2</b> Tap Contact</div>
+        <div class="step"><b>3</b> Message her directly</div>
       </div>
     </div>
   </header>
@@ -370,10 +298,10 @@
   <main>
     <div class="section-head" id="profiles">
       <div>
-        <h2 class="section-title">Available to book</h2>
-        <p class="section-sub">Two profiles are live right now. More will be added only when they say yes to being listed.</p>
+        <h2 class="section-title">Local ads</h2>
+        <p class="section-sub">Two ads are live right now. More will be added only when they say yes to being listed.</p>
       </div>
-      <span class="count-pill"><i aria-hidden="true">●</i> 2 available</span>
+      <span class="count-pill"><i aria-hidden="true">●</i> 2 ads live</span>
     </div>
 
     <div class="profiles">
@@ -390,12 +318,11 @@
           </div>
           <ul class="meta">
             <li><span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></span><div><b>Place</b><small>Fort Rucker, Alabama</small></div></li>
-            <li><span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><div><b>When she is free</b><small>Ask when you book — not listed yet</small></div></li>
+            <li><span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><div><b>When she is free</b><small>Ask her directly — not listed yet</small></div></li>
             <li><span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21h16M5 21v-8a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v8M9 7a3 3 0 1 1 6 0c0 1-1 1.5-1.5 2h-3C10 8.5 9 8 9 7Z"/></svg></span><div><b>Age</b><small>Confirmed 18 or older</small></div></li>
           </ul>
-          <button class="book-btn book-btn-person" type="button" data-name="Angel Risky">Book Angel Risky <span aria-hidden="true">→</span></button>
-          <a class="crypto-btn" href="#paySection">Connect Wallet / Pay with Crypto</a>
-          <p class="note">Free to request. At the end you can email your request to <a href="mailto:sarhbarbab@hotmail.com">sarhbarbab@hotmail.com</a>.</p>
+          <a class="contact-btn" href="#contact">Contact Angel Risky <span aria-hidden="true">→</span></a>
+          <p class="note">Contact: <a href="#contact">see below</a></p>
         </div>
       </article>
 
@@ -415,124 +342,45 @@
             <li><span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21h16M5 21v-8a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v8M9 7a3 3 0 1 1 6 0c0 1-1 1.5-1.5 2h-3C10 8.5 9 8 9 7Z"/></svg></span><div><b>Age</b><small>34</small></div></li>
             <li><span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11.5 12 4l9 7.5M5 10v10h14V10"/></svg></span><div><b>Services</b><small>Incall and Outcall services</small></div></li>
           </ul>
-          <button class="book-btn book-btn-person" type="button" data-name="Sweet Lauren Xoxo">Book Sweet Lauren Xoxo <span aria-hidden="true">→</span></button>
-          <a class="crypto-btn" href="#paySection">Connect Wallet / Pay with Crypto</a>
-          <p class="note">Free to request. At the end you can email your request to <a href="mailto:sarhbarbab@hotmail.com">sarhbarbab@hotmail.com</a>.</p>
+          <a class="contact-btn" href="#contact">Contact Sweet Lauren Xoxo <span aria-hidden="true">→</span></a>
+          <p class="note">Contact: <a href="#contact">see below</a></p>
         </div>
       </article>
     </div>
 
-    <section class="panel" id="bookingPanel" aria-labelledby="bookingTitle">
+    <section class="panel" id="contact" aria-labelledby="contactTitle">
       <div class="panel-top">
-        <span class="kicker">Booking request</span>
-        <h2 id="bookingTitle">Book Angel Risky</h2>
-        <p>Fill in your details below. When you tap “Make my request”, you will get a ready-to-send booking you can email to sarhbarbab@hotmail.com.</p>
+        <span class="kicker">Contact</span>
+        <h2 id="contactTitle">Contact the advertiser directly</h2>
+        <p>This is an ad board. Please contact the advertiser directly using the contact details on their ad. This site does not take bookings or payments.</p>
       </div>
-      <div class="panel-grid">
-        <aside class="summary" aria-label="Booking summary">
-          <h3>You are booking</h3>
-          <p class="who" id="summaryPerson">Angel Risky</p>
-          <ol>
-            <li><b>1</b><span>Fill in your name, contact, date, time, and place.</span></li>
-            <li><b>2</b><span>Tap “Make my request” to create your booking text.</span></li>
-            <li><b>3</b><span>Tap “Email my request” — it opens your email app addressed and ready to send. You can also copy it instead.</span></li>
-          </ol>
-          <div class="send-to"><strong>Send bookings to:</strong><br /><a href="mailto:sarhbarbab@hotmail.com">sarhbarbab@hotmail.com</a></div>
-          <div class="free"><strong>Free to request.</strong><br />There is no charge to make a request on this page.</div>
-        </aside>
-
-        <div class="form-side">
-          <form id="bookingForm" novalidate>
-            <label for="f-name">Your name</label>
-            <input id="f-name" name="name" type="text" autocomplete="name" placeholder="Your name" required />
-
-            <label for="f-contact">Your phone or email</label>
-            <input id="f-contact" name="contact" type="text" autocomplete="tel" placeholder="So she can reply to you" required />
-
-            <div class="row">
-              <div>
-                <label for="f-date">Date</label>
-                <input id="f-date" name="date" type="date" required />
-              </div>
-              <div>
-                <label for="f-time">Time</label>
-                <input id="f-time" name="time" type="time" required />
-              </div>
-            </div>
-
-            <label for="f-place">Place to meet</label>
-            <input id="f-place" name="place" type="text" placeholder="City or meeting place" required />
-
-            <label for="f-note">Anything else? <span class="optional">(optional)</span></label>
-            <textarea id="f-note" name="note" placeholder="Add a short note if you want"></textarea>
-
-            <button class="submit" type="submit">Make my request</button>
-            <p class="form-error" id="formError" role="alert"></p>
-          </form>
-
-          <div class="result" id="resultBox" aria-live="polite">
-            <h3><span class="check" aria-hidden="true">✓</span> Your booking request is ready</h3>
-            <pre id="resultText"></pre>
-            <a class="email-btn" id="emailBtn" href="mailto:sarhbarbab@hotmail.com">Email my request to sarhbarbab@hotmail.com</a>
-            <button class="copy-btn" id="copyBtn" type="button" style="margin-top:12px">Copy my request instead</button>
-            <div class="copied" id="copiedMsg"></div>
-            <p class="note">Tap “Email my request” and your email app will open with everything filled in — just press Send there. Or copy the text and paste it into any message.</p>
-          </div>
-        </div>
+      <div class="contact-body">
+        <p>Each advertiser lists their own contact details — phone, WhatsApp, or Telegram — on their ad. Please message the advertiser directly to talk about meeting. This site does not take bookings or payments, and does not pass messages on.</p>
+        <p>To place an ad or ask about this site, email <a href="mailto:sarhbarbab@hotmail.com">sarhbarbab@hotmail.com</a>.</p>
       </div>
     </section>
 
 
-    <section class="panel pay-panel" id="paySection" aria-labelledby="payTitle">
-      <div class="panel-top">
-        <span class="kicker">Crypto payment</span>
-        <h2 id="payTitle">Pay with Crypto</h2>
-        <p>Book first, agree your price, then pay here in USDC or ETH. Connect your wallet at the top of this page, or use the button below.</p>
-      </div>
-      <div class="pay-body">
-        <p class="pay-warning"><strong>Only pay after your booking price is agreed.</strong> There is no fixed price on this page — you type in the agreed amount yourself. Check the amount, coin, network, and recipient address carefully before you confirm in your wallet. Crypto payments cannot be undone.</p>
-        <div class="pay-grid">
-          <div>
-            <label for="amount">Amount</label>
-            <input id="amount" type="number" min="0" step="any" inputmode="decimal" placeholder="e.g. 50" />
-          </div>
-          <div>
-            <label for="coin">Coin</label>
-            <select id="coin">
-              <option value="USDC">USDC</option>
-              <option value="ETH">ETH</option>
-            </select>
-          </div>
-        </div>
-        <label for="network">Network</label>
-        <select id="network">
-          <option value="1">Ethereum</option>
-          <option value="8453">Base</option>
-        </select>
-        <div class="recipient-box">Recipient address:<br /><code id="recipient">0x2a039cf6334b733ace81355fc6edffdc1ee4b9c1</code></div>
-        <button id="pay" type="button">Pay</button>
-        <p id="pay-status" role="status"></p>
-      </div>
-    </section>
+
 
     <div class="section-head" id="how">
       <div>
         <h2 class="section-title">How it works</h2>
-        <p class="section-sub">Three simple steps — no account, no payment on this page.</p>
+      <p class="section-sub">Three simple steps — no account, no booking, no payment on this page.</p>
       </div>
     </div>
     <div class="how-grid">
-      <div class="how-card"><div class="num">01</div><h3>Tap Book</h3><p>Tap <strong>Book</strong> on the card of the person you want to book. The form will be set for her.</p></div>
-      <div class="how-card"><div class="num">02</div><h3>Fill in the form</h3><p>Add your name, how to reach you, the date and time you want, and where to meet.</p></div>
-      <div class="how-card"><div class="num">03</div><h3>Email &amp; send</h3><p>Tap “Email my request” to send your ready-made booking to <a href="mailto:sarhbarbab@hotmail.com">sarhbarbab@hotmail.com</a> — or copy it and paste it into any message.</p></div>
+      <div class="how-card"><div class="num">01</div><h3>Browse ads</h3><p>Look through the ads and pick a person.</p></div>
+      <div class="how-card"><div class="num">02</div><h3>Tap Contact</h3><p>Tap <strong>Contact</strong> on her ad to jump to the contact section.</p></div>
+      <div class="how-card"><div class="num">03</div><h3>Message her directly</h3><p>Use the contact details on her ad to message her directly. This site does not take bookings or payments.</p></div>
     </div>
 
     <section class="know" aria-labelledby="knowTitle">
       <h2 id="knowTitle">Good to know</h2>
       <div class="know-grid">
-        <div class="know-item"><strong>Private &amp; simple</strong><p>Your request is made on this page. Nothing is sent until you tap to email it to <a href="mailto:sarhbarbab@hotmail.com">sarhbarbab@hotmail.com</a> and press Send in your email app.</p></div>
+        <div class="know-item"><strong>Ad board only</strong><p>This site is an ad board only. It does not take bookings or payments — you contact the advertiser directly.</p></div>
         <div class="know-item"><strong>Adults only</strong><p>Everyone listed here is 18 or older and said yes to being listed on this page.</p></div>
-        <div class="know-item"><strong>Please be respectful</strong><p>Use your real contact details so she can reply, and be polite and clear about date, time, and place.</p></div>
+        <div class="know-item"><strong>Please be respectful</strong><p>Use your real contact details so she can reply, and be polite and clear when you message her.</p></div>
       </div>
     </section>
 
@@ -543,24 +391,12 @@
     </div>
     <div class="faq">
       <details>
-        <summary>How do I finish my booking?</summary>
-        <p>Fill in the form and tap “Make my request”. You will see your booking written out for you — tap “Email my request” and your email app will open addressed to sarhbarbab@hotmail.com with everything filled in. Just press Send there. That send is what completes the booking. You can also copy the text and paste it into any message instead.</p>
-      </details>
-      <details>
-        <summary>Where do bookings go?</summary>
-        <p>Bookings are emailed to <a href="mailto:sarhbarbab@hotmail.com">sarhbarbab@hotmail.com</a>. Tap “Email my request” after filling in the form and your email app will open with that address and your booking already filled in.</p>
-      </details>
-      <details>
-        <summary>How do I pay with crypto?</summary>
-        <p>Book first and agree your price, then use the “Pay with Crypto” section on this page. Connect your wallet, type in the agreed amount, choose USDC or ETH and Ethereum or Base, check the recipient address, and confirm in your wallet. Only pay after your booking price is agreed.</p>
-      </details>
-      <details>
-        <summary>Does it cost anything to request?</summary>
-        <p>No. It is free to make a request on this page.</p>
+        <summary>How do I contact someone?</summary>
+        <p>Contact the advertiser directly using the contact details on their ad. This site does not take bookings or payments.</p>
       </details>
       <details>
         <summary>When is Angel Risky free?</summary>
-        <p>Her times are not listed yet, so please ask about the date and time you want when you book.</p>
+        <p>Her times are not listed yet, so please ask her directly.</p>
       </details>
       <details>
         <summary>What does Sweet Lauren Xoxo offer?</summary>
@@ -572,119 +408,12 @@
   <footer>
     <div class="foot-rule" aria-hidden="true">◆ ◆ ◆</div>
     <p><strong>Meet Locals — Ft Rucker &amp; Dothan, AL</strong><br />
-    <strong>Send bookings to:</strong> <a href="mailto:sarhbarbab@hotmail.com">sarhbarbab@hotmail.com</a><br />
+    <strong>To place an ad or ask about this site:</strong> <a href="mailto:sarhbarbab@hotmail.com">sarhbarbab@hotmail.com</a><br />
     <strong>Adults only.</strong> Everyone listed on this page is 18 or older and said yes to being listed.<br />
-    Please be respectful when you book.</p>
+    Please be respectful when you contact an advertiser.</p>
   </footer>
 </div>
 
-<script>
-(function(){
-  var panel = document.getElementById('bookingPanel');
-  var bookingTitle = document.getElementById('bookingTitle');
-  var summaryPerson = document.getElementById('summaryPerson');
-  var bookBtns = document.querySelectorAll('.book-btn-person');
-  var form = document.getElementById('bookingForm');
-  var resultBox = document.getElementById('resultBox');
-  var resultText = document.getElementById('resultText');
-  var copyBtn = document.getElementById('copyBtn');
-  var emailBtn = document.getElementById('emailBtn');
-  var bookingEmail = 'sarhbarbab@hotmail.com';
-  var copiedMsg = document.getElementById('copiedMsg');
-  var errorEl = document.getElementById('formError');
-  var dateInput = document.getElementById('f-date');
-  var selectedPerson = 'Angel Risky';
-
-  try {
-    var today = new Date();
-    var iso = today.toISOString().slice(0,10);
-    dateInput.min = iso;
-  } catch(e){}
-
-  function openBooking(name){
-    selectedPerson = name;
-    bookingTitle.textContent = 'Book ' + name;
-    if(summaryPerson) summaryPerson.textContent = name;
-    resultBox.classList.remove('show');
-    copiedMsg.textContent = '';
-    errorEl.textContent = '';
-    panel.scrollIntoView({behavior:'smooth', block:'start'});
-    setTimeout(function(){ document.getElementById('f-name').focus({preventScroll:true}); }, 350);
-  }
-
-  for(var i=0;i<bookBtns.length;i++){
-    (function(btn){
-      btn.addEventListener('click', function(){ openBooking(btn.getAttribute('data-name')); });
-    })(bookBtns[i]);
-  }
-
-  function prettyDate(v){
-    try {
-      var d = new Date(v + 'T12:00:00');
-      return d.toLocaleDateString(undefined, {weekday:'long', year:'numeric', month:'long', day:'numeric'});
-    } catch(e){ return v; }
-  }
-  function prettyTime(v){
-    try {
-      var parts = v.split(':');
-      var d = new Date(); d.setHours(parseInt(parts[0],10), parseInt(parts[1],10), 0, 0);
-      return d.toLocaleTimeString(undefined, {hour:'numeric', minute:'2-digit'});
-    } catch(e){ return v; }
-  }
-
-  form.addEventListener('submit', function(ev){
-    ev.preventDefault();
-    var name = document.getElementById('f-name').value.trim();
-    var contact = document.getElementById('f-contact').value.trim();
-    var date = dateInput.value;
-    var time = document.getElementById('f-time').value;
-    var place = document.getElementById('f-place').value.trim();
-    var note = document.getElementById('f-note').value.trim();
-
-    if(!name || !contact || !date || !time || !place){
-      errorEl.textContent = 'Please fill in every box above (the note box is optional).';
-      resultBox.classList.remove('show');
-      return;
-    }
-    errorEl.textContent = '';
-
-    var lines = [
-      'Booking request for ' + selectedPerson,
-      '',
-      'Name: ' + name,
-      'Contact: ' + contact,
-      'Date: ' + prettyDate(date),
-      'Time: ' + prettyTime(time),
-      'Place: ' + place
-    ];
-    if(note) lines.push('Note: ' + note);
-
-    resultText.textContent = lines.join('\n');
-    if(emailBtn){
-      var subject = 'Booking request for ' + selectedPerson;
-      emailBtn.href = 'mailto:' + bookingEmail + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(lines.join('\n'));
-    }
-    resultBox.classList.add('show');
-    copiedMsg.textContent = '';
-    resultBox.scrollIntoView({behavior:'smooth', block:'nearest'});
-  });
-
-  copyBtn.addEventListener('click', function(){
-    var text = resultText.textContent;
-    function done(){ copiedMsg.textContent = 'Copied! Now paste it into a message or email to send it.'; }
-    if(navigator.clipboard && navigator.clipboard.writeText){
-      navigator.clipboard.writeText(text).then(done, function(){ fallback(); });
-    } else { fallback(); }
-    function fallback(){
-      var ta = document.createElement('textarea');
-      ta.value = text; ta.style.position='fixed'; ta.style.opacity='0';
-      document.body.appendChild(ta); ta.select();
-      try { document.execCommand('copy'); done(); } catch(e){ copiedMsg.textContent = 'Copy did not work — press and hold the text above to copy it.'; }
-      document.body.removeChild(ta);
-    }
-  });
-})();
-</script>
 <img src="https://hits.sh/malustedilip-sketch.github.io/Booking-Meetlocals.svg" alt="" width="1" height="1" style="position:absolute;opacity:0" aria-hidden="true">
 </body>
 </html>
