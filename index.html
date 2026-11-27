@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-<meta name="color-scheme" content="light dark" />
+<meta name="color-scheme" content="dark" />
 <link rel="icon" href="data:," />
 <title>Meet Locals — Ft Rucker &amp; Dothan, AL</title>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -11,49 +11,26 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600;1,700&family=Source+Sans+3:wght@400;600;700;800&display=swap" rel="stylesheet" />
 <style>
   :root{
-    --bg:#fcf8f5;
-    --bg-warm:#f6ede8;
-    --surface:#ffffff;
-    --surface-2:#f9f1ec;
-    --ink:#221416;
-    --ink-2:#3d2b2e;
-    --muted:#6e5a5e;
-    --line:#ead9d2;
-    --line-strong:#dcc4b8;
-    --accent:#7c1d2f;
-    --accent-deep:#5e1423;
+    --bg:#100b0e;
+    --bg-warm:#171016;
+    --surface:#1e151a;
+    --surface-2:#261b21;
+    --ink:#f6ede7;
+    --ink-2:#e7d6cf;
+    --muted:#c3a79f;
+    --line:#3d2b33;
+    --line-strong:#5a404b;
+    --accent:#b03a4b;
+    --accent-deep:#8e2a3a;
     --accent-ink:#ffffff;
-    --accent-soft:#fbeeee;
-    --gold:#b8894a;
-    --gold-soft:#f3e6d3;
-    --green:#1f7a4d;
-    --green-soft:#e6f4ec;
-    --shadow:0 20px 45px rgba(94,20,35,.10), 0 2px 8px rgba(94,20,35,.06);
-    --shadow-sm:0 8px 24px rgba(94,20,35,.08);
+    --accent-soft:#332028;
+    --gold:#c9a35c;
+    --gold-soft:#2e2417;
+    --green:#7fd6a8;
+    --green-soft:#1d3327;
+    --shadow:0 24px 55px rgba(0,0,0,.55), 0 2px 10px rgba(0,0,0,.4);
+    --shadow-sm:0 10px 28px rgba(0,0,0,.4);
     --radius:20px;
-  }
-  @media (prefers-color-scheme: dark){
-    :root{
-      --bg:#171112;
-      --bg-warm:#1f1618;
-      --surface:#241a1c;
-      --surface-2:#2c2023;
-      --ink:#f8efec;
-      --ink-2:#e9d8d2;
-      --muted:#c9aca8;
-      --line:#433034;
-      --line-strong:#5a4147;
-      --accent:#e48397;
-      --accent-deep:#f0a3b4;
-      --accent-ink:#221014;
-      --accent-soft:#382228;
-      --gold:#d9ab6d;
-      --gold-soft:#33291d;
-      --green:#7fd6a8;
-      --green-soft:#1d3327;
-      --shadow:0 20px 45px rgba(0,0,0,.45), 0 2px 8px rgba(0,0,0,.3);
-      --shadow-sm:0 8px 24px rgba(0,0,0,.35);
-    }
   }
   *{box-sizing:border-box}
   html{scroll-behavior:smooth}
@@ -203,8 +180,52 @@
   footer{margin-top:44px;border-top:1px solid var(--line);padding-top:24px;text-align:center;color:var(--muted);font-size:.93rem;line-height:1.7}
   footer strong{color:var(--ink)}
   footer .foot-rule{color:var(--gold);letter-spacing:.4em;font-size:.8rem;margin-bottom:12px}
+
+  /* ---------- MATURE REDESIGN ADDITIONS ---------- */
+  body{background:radial-gradient(1200px 600px at 50% -100px, #2a1822 0%, var(--bg) 55%)}
+  .badge{border-color:var(--gold);color:var(--gold);background:#1a1216}
+  .badge.plain{color:var(--ink-2)}
+  h1 em{color:var(--gold)}
+  .btn-primary{background:linear-gradient(135deg,#c24557,#8e2a3a);border-color:#c24557}
+  .card{border-color:var(--line-strong)}
+  .book-btn{background:linear-gradient(135deg,#c24557,#8e2a3a)}
+  .book-btn:hover{background:linear-gradient(135deg,#a93a4b,#7c2231)}
+  .panel-top{background:linear-gradient(135deg,#3a1e27,#24141b);color:var(--ink);border-bottom:1px solid var(--line-strong)}
+  .panel-top .kicker{color:var(--gold)}
+  .submit{background:var(--gold);color:#1d1508}
+  .submit:hover{background:#d9b671;opacity:1}
+  .wallet-bar{margin:26px auto 0;max-width:640px;background:var(--surface);border:1px solid var(--gold);border-radius:18px;padding:18px;box-shadow:var(--shadow-sm)}
+  .wallet-bar h2{font-family:"Playfair Display",Georgia,serif;font-size:1.3rem;margin:0 0 4px}
+  .wallet-bar p{margin:0 0 12px;color:var(--muted);font-size:.97rem}
+  .wallet-bar appkit-button{display:flex;justify-content:center}
+  #account-status{font-size:.9rem;color:var(--muted);margin:10px 0 0;word-break:break-all;text-align:center}
+  .crypto-btn{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;margin-top:12px;background:transparent;color:var(--gold);border:1.5px solid var(--gold);border-radius:14px;padding:14px 16px;font-size:1rem;font-weight:800;text-decoration:none;min-height:48px}
+  .crypto-btn:hover{background:var(--gold-soft)}
+  .pay-panel{margin-top:28px}
+  .pay-body{padding:22px}
+  @media(min-width:880px){.pay-body{padding:26px 28px}}
+  .pay-warning{background:#2e2417;border:1px solid var(--gold);border-radius:12px;padding:14px 16px;font-size:.98rem;line-height:1.6;color:var(--ink-2)}
+  .pay-warning strong{color:var(--gold)}
+  .pay-grid{display:grid;gap:0}
+  @media(min-width:560px){.pay-grid{grid-template-columns:1fr 1fr;gap:14px}}
+  .recipient-box{background:var(--surface-2);border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin-top:18px;font-size:.95rem}
+  .recipient-box code{word-break:break-all;color:var(--gold);font-size:.92rem}
+  #pay{width:100%;margin-top:20px;background:linear-gradient(135deg,#c24557,#8e2a3a);color:#fff;border:0;border-radius:14px;padding:16px;font-size:1.06rem;font-weight:800;cursor:pointer;min-height:48px}
+  #pay:hover{opacity:.92}
+  #pay-status{font-size:.95rem;color:var(--ink-2);margin:12px 0 0;min-height:1.2em;word-break:break-word}
+  .pay-connect-row{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:18px}
+  .pay-connect-row appkit-button{display:inline-flex}
 </style>
-</head>
+<script type="module" crossorigin src="./assets/index-DVQYT7EW.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/rolldown-runtime-Cw2AbfQG.js">
+    <link rel="modulepreload" crossorigin href="./assets/-base-org-account-BYg571CL.js">
+    <link rel="modulepreload" crossorigin href="./assets/-noble-curves-BoBVVdf4.js">
+    <link rel="modulepreload" crossorigin href="./assets/-noble-hashes-CMOmdbqC.js">
+    <link rel="modulepreload" crossorigin href="./assets/-msgpack-msgpack-BP-Jgxeu.js">
+    <link rel="modulepreload" crossorigin href="./assets/-lit-reactive-element-3JtC3ogf.js">
+    <link rel="modulepreload" crossorigin href="./assets/-reown-appkit-W1Dklm6h.js">
+    <link rel="modulepreload" crossorigin href="./assets/-reown-appkit-adapter-wagmi-C50YpWF3.js">
+  </head>
 <body>
 <div class="wrap">
 
@@ -220,6 +241,12 @@
       <div class="hero-ctas">
         <a class="btn-primary" href="#profiles">Browse profiles ↓</a>
         <a class="btn-secondary" href="#how">How it works</a>
+      </div>
+      <div class="wallet-bar" aria-label="Connect wallet">
+        <h2>Pay with crypto</h2>
+        <p>Connect your wallet here, or scroll to the payment section after you book. USDC or ETH, on Ethereum or Base.</p>
+        <appkit-button></appkit-button>
+        <p id="account-status" role="status">Wallet not connected yet.</p>
       </div>
       <div class="hero-facts" aria-label="At a glance">
         <div><b>2</b><span>Profiles live now</span></div>
@@ -262,6 +289,7 @@
             <li><span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21h16M5 21v-8a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v8M9 7a3 3 0 1 1 6 0c0 1-1 1.5-1.5 2h-3C10 8.5 9 8 9 7Z"/></svg></span><div><b>Age</b><small>Confirmed 18 or older</small></div></li>
           </ul>
           <button class="book-btn book-btn-person" type="button" data-name="Angel Risky">Book Angel Risky <span aria-hidden="true">→</span></button>
+          <a class="crypto-btn" href="#paySection">Connect Wallet / Pay with Crypto</a>
           <p class="note">Free to request. At the end you can email your request to <a href="mailto:sarhbarbab@hotmail.com">sarhbarbab@hotmail.com</a>.</p>
         </div>
       </article>
@@ -283,6 +311,7 @@
             <li><span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11.5 12 4l9 7.5M5 10v10h14V10"/></svg></span><div><b>Services</b><small>Incall and Outcall services</small></div></li>
           </ul>
           <button class="book-btn book-btn-person" type="button" data-name="Sweet Lauren Xoxo">Book Sweet Lauren Xoxo <span aria-hidden="true">→</span></button>
+          <a class="crypto-btn" href="#paySection">Connect Wallet / Pay with Crypto</a>
           <p class="note">Free to request. At the end you can email your request to <a href="mailto:sarhbarbab@hotmail.com">sarhbarbab@hotmail.com</a>.</p>
         </div>
       </article>
@@ -348,6 +377,39 @@
       </div>
     </section>
 
+
+    <section class="panel pay-panel" id="paySection" aria-labelledby="payTitle">
+      <div class="panel-top">
+        <span class="kicker">Crypto payment</span>
+        <h2 id="payTitle">Pay with Crypto</h2>
+        <p>Book first, agree your price, then pay here in USDC or ETH. Connect your wallet at the top of this page, or use the button below.</p>
+      </div>
+      <div class="pay-body">
+        <p class="pay-warning"><strong>Only pay after your booking price is agreed.</strong> There is no fixed price on this page — you type in the agreed amount yourself. Check the amount, coin, network, and recipient address carefully before you confirm in your wallet. Crypto payments cannot be undone.</p>
+        <div class="pay-grid">
+          <div>
+            <label for="amount">Amount</label>
+            <input id="amount" type="number" min="0" step="any" inputmode="decimal" placeholder="e.g. 50" />
+          </div>
+          <div>
+            <label for="coin">Coin</label>
+            <select id="coin">
+              <option value="USDC">USDC</option>
+              <option value="ETH">ETH</option>
+            </select>
+          </div>
+        </div>
+        <label for="network">Network</label>
+        <select id="network">
+          <option value="1">Ethereum</option>
+          <option value="8453">Base</option>
+        </select>
+        <div class="recipient-box">Recipient address:<br /><code id="recipient">0x2a039cf6334b733ace81355fc6edffdc1ee4b9c1</code></div>
+        <button id="pay" type="button">Pay</button>
+        <p id="pay-status" role="status"></p>
+      </div>
+    </section>
+
     <div class="section-head" id="how">
       <div>
         <h2 class="section-title">How it works</h2>
@@ -382,6 +444,10 @@
       <details>
         <summary>Where do bookings go?</summary>
         <p>Bookings are emailed to <a href="mailto:sarhbarbab@hotmail.com">sarhbarbab@hotmail.com</a>. Tap “Email my request” after filling in the form and your email app will open with that address and your booking already filled in.</p>
+      </details>
+      <details>
+        <summary>How do I pay with crypto?</summary>
+        <p>Book first and agree your price, then use the “Pay with Crypto” section on this page. Connect your wallet, type in the agreed amount, choose USDC or ETH and Ethereum or Base, check the recipient address, and confirm in your wallet. Only pay after your booking price is agreed.</p>
       </details>
       <details>
         <summary>Does it cost anything to request?</summary>
